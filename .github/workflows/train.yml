@@ -25,7 +25,7 @@ jobs:
           pip install mlflow==2.19.0
           pip install pandas numpy scikit-learn nltk
 
-      - name: Run MLflow Project
+      - name: Run Model Training
         run: |
           cd MLProject
-          mlflow run .
+          python modelling.py
