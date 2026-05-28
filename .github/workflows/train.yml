@@ -20,6 +20,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          python-version: 3.12
+
       - name: Install Dependencies
         run: |
           pip install mlflow==2.19.0
