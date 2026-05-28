@@ -29,7 +29,6 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install mlflow==2.19.0
-          pip install pandas numpy scikit-learn nltk
 
       - name: Run MLflow Project
-        run: mlflow run MLProject
+        run: mlflow run MLProject --env-manager=conda
